@@ -17,10 +17,10 @@ class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm){
     // judul untuk tabs
     override fun getPageTitle(position: Int): CharSequence? {
         return when(position){
-            0 -> "First Tab"
-            1 -> "Second Tab"
-            2 -> "Third Tab"
-            else -> "Fourth Tab"
+            0 -> "About Me"
+            1 -> "Galery"
+            2 -> "Influencer Favourite"
+            else -> "Favourite City"
         }
     }
 }

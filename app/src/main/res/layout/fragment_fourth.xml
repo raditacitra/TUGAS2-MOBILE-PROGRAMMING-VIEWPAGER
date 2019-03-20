@@ -2,13 +2,42 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
              tools:context=".FourthFragment">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:background="#C2F0EB">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:text="MY FAVOURITE CITY"
+                  android:textSize="36sp"
+                  android:textStyle="bold"
+                  android:textColor="#2D85AD"
+                  android:textAlignment="center"/>
+        <android.support.v7.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center_horizontal">
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/jogja1"/>
+        </android.support.v7.widget.CardView>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:text="Berbagai kota yang berdiri di Indonesia, dari Sabang sampai Merauke, dengan keunikan yang dimiliki disetiap kota masing-masing. Tentunya juga menyimpan kekurangan dan kelebihan bagi warganya sendiri, juga pengunjungnya.
 
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:text="Page 4"/>
+Hal yang sama di Kota Jogjakarta. Sepenggal tanah yang mulai berkuasa dari zaman Mataram Kuno, Mataram Islam, dan sampai sekarang, Ngayogyakarta Hadiningrat. Sejarah yang panjang tentunya dialami Kota Jogjakarta, hingga sekarang Kota Para Raja ini tetap istimewa.
+
+Perubahan zaman yang terus berkembang mengantarkan Jogjakarta mengalami perubahan, tanpa kehilangan identas dirinya sebagai Kota Raja, Kota Religius, dan Kota Budaya. Tak hanya  warganya saja terkagum-kagum apa yang sudah mereka miliki, namun dari berbagai penjuru dunia. Begitu banyaknya wisatawan asing yang keluar-masuk dari Bandara Internasional Adisucipto, membuktikan bahwa Jogja selalu jadi sorotan masyarakat dunia."
+                      android:textAlignment="center"/>
+        </ScrollView>
+    </LinearLayout>
 </FrameLayout>
